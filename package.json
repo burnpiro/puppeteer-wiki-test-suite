@@ -1,0 +1,26 @@
+{
+  "name": "puppeteer-wiki-test",
+  "version": "1.0.0",
+  "description": "Test suit example for wikipedia",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.js --watchAll --bail",
+    "test-all": "jest --config jest.config.js"
+  },
+  "keywords": [
+    "puppeteer",
+    "testing",
+    "test",
+    "javascript"
+  ],
+  "author": "Kemal Erdem",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^21.2.1",
+    "puppeteer": "^0.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.0",
+    "eslint-config-airbnb-standard": "^1.6.5"
+  }
+}
