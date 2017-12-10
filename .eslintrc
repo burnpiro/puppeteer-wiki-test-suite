@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb-standard"],
+  "rules": {
+    "semi": ["error", "never"],
+    "max-len": ["warn", { "code": 160 }],
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+  },
+  "env": {
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "globals": {
+    "browser": true,
+    "page": true,
+    "testUrl": true,
+    "env": true
+  }
+}
