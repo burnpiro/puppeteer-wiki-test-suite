@@ -1,5 +1,5 @@
 {
-  "name": "puppeteer-wiki-test",
+  "name": "puppeteer-wiki-test-suite",
   "version": "1.0.0",
   "description": "Test suit example for wikipedia",
   "main": "index.js",
