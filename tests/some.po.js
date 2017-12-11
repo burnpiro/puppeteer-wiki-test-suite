@@ -22,6 +22,7 @@ module.exports = class LandingPage {
 
   async getLoggedValue () {
     try {
+      await this.page.waitForSelector(this._loggedDetail)
       const loggedDetailsHandle = await this.page.$(this._loggedDetail)
       const loggedDetailsValue = await this.page.evaluate(element => element.innerHTML, loggedDetailsHandle)
       return loggedDetailsValue
