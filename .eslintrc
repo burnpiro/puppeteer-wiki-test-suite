@@ -2,6 +2,7 @@
   "extends": ["airbnb-standard"],
   "rules": {
     "semi": ["error", "never"],
+    "no-console": ["off"],
     "max-len": ["warn", { "code": 160 }],
     "no-underscore-dangle": ["error", { "allowAfterThis": true }]
   },

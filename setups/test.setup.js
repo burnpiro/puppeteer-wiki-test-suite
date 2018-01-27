@@ -12,6 +12,14 @@ beforeEach(async () => {
   })
 
   page = await browser.newPage()
+  browser2 = await puppeteer.launch({
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox'
+    ]
+  })
+
+  page2 = await browser.newPage()
 
   // Capture logging
   if (env === 'developemnt') {

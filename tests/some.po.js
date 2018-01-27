@@ -24,8 +24,7 @@ module.exports = class LandingPage {
     try {
       await this.page.waitForSelector(this._loggedDetail)
       const loggedDetailsHandle = await this.page.$(this._loggedDetail)
-      const loggedDetailsValue = await this.page.evaluate(element => element.innerHTML, loggedDetailsHandle)
-      return loggedDetailsValue
+      return await this.page.evaluate(element => element.innerHTML, loggedDetailsHandle)
     } catch (e) {
       console.error(e)
       return false
