@@ -1,5 +1,5 @@
 const env = process.env.ENV || 'development'
-const testUrl = process.env.TEST_URL || 'https://www.wikipedia.org/'
+const testUrl = process.env.TEST_URL || 'https://reactjs.org/'
 
 module.exports = {
   testMatch: [
