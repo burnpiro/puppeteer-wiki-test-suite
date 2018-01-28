@@ -4,7 +4,7 @@
   "description": "Test suit example for wikipedia",
   "main": "index.js",
   "scripts": {
-    "test": "jest --config jest.config.js --watchAll --bail",
+    "test": "jest --config jest.config.js --watchAll",
     "test-all": "jest --config jest.config.js"
   },
   "keywords": [
@@ -17,7 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "jest": "22.1.4",
-    "puppeteer": "1.0.0"
+    "puppeteer": "1.0.0",
+    "puppeteer-screenshot-tester": "0.1.2"
   },
   "devDependencies": {
     "eslint": "4.16.0",
