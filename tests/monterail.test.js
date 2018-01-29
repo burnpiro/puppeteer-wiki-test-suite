@@ -24,8 +24,8 @@ describe('monterail page suite', async () => {
 
   it('displays page in right way', async () => {
     const tester = await ScreenTest()
-    await homePage.editDescription()
-    const result = await tester(page, 'developersPage', { fullPage: true })
+    // await homePage.editDescription()
+    const result = await tester(page, 'developersPage2', { fullPage: true })
     expect(result).toBe(true)
   })
 })
