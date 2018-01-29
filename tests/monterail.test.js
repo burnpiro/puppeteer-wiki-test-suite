@@ -8,7 +8,7 @@ describe('monterail page suite', async () => {
 
   beforeEach(async () => {
     originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 200000
+    jasmine.DEFAULT_TIMEOUT_INTERVAL = 500000
     page = await browser.newPage()
     await page.setViewport({ width: 1900, height: 1080 })
     homePage = new MontePage()
