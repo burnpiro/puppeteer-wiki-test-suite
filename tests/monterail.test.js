@@ -3,20 +3,13 @@ const ScreenTest = require('puppeteer-screenshot-tester')
 
 describe('monterail page suite', async () => {
   let page,
-    homePage,
-    originalTimeout
+    homePage
 
   beforeEach(async () => {
-    originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = 500000
     page = await browser.newPage()
     await page.setViewport({ width: 1900, height: 1080 })
     homePage = new MontePage()
     await homePage.setup(page)
-  })
-
-  afterEach(() => {
-    jasmine.DEFAULT_TIMEOUT_INTERVAL = originalTimeout
   })
 
   it('loaded page without errors', async () => {
