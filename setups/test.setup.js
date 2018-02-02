@@ -5,7 +5,7 @@ let originalTimeout
 
 beforeEach(() => {
   originalTimeout = jasmine.DEFAULT_TIMEOUT_INTERVAL
-  jasmine.DEFAULT_TIMEOUT_INTERVAL = 500000
+  jasmine.DEFAULT_TIMEOUT_INTERVAL = 5000000
 
   // Capture logging
   if (env === 'developemnt') {
@@ -18,7 +18,7 @@ afterEach(() => {
 })
 
 beforeAll(async () => {
-  jest.setTimeout(5400000)
+  jest.setTimeout(54000000)
 
   browser = await puppeteer.launch({
     args: [

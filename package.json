@@ -18,7 +18,7 @@
   "dependencies": {
     "jest": "22.1.4",
     "puppeteer": "1.0.0",
-    "puppeteer-screenshot-tester": "0.1.2"
+    "puppeteer-screenshot-tester": "1.0.1"
   },
   "devDependencies": {
     "eslint": "4.16.0",
